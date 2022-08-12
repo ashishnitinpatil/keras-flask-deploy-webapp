@@ -5,3 +5,4 @@ numpy==1.19.5
 Pillow==8.3.2
 tensorflow-cpu==2.5.1
 Werkzeug==2.0.1
+pylint==2.5.3
