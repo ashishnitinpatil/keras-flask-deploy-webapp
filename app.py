@@ -39,7 +39,7 @@ MODEL_PATH = "models/your_model.h5"
 # print('Model loaded. Start serving...')
 
 
-def model_predict(img, model):
+def model_predict(img, given_model):
     img = img.resize((224, 224))
 
     # Preprocessing the image
@@ -51,7 +51,7 @@ def model_predict(img, model):
     # otherwise, it won't make correct prediction!
     x = preprocess_input(x, mode="tf")
 
-    preds = model.predict(x)
+    preds = given_model.predict(x)
     return preds
 
 
